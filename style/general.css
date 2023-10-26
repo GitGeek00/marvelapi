@@ -1,0 +1,89 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap');
+
+body {
+    font-family: Nunito;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #E4445C;
+
+    & a {
+        color: #ffffff;
+        font-size: 17px;
+        letter-spacing: 1px;
+
+        &:hover {
+            color: white;
+            font-weight: 600;
+        }
+    }
+
+    .nav-item {
+        padding-right: 50px;
+    }
+
+    & .nav-link.active {
+        color: white;
+        font-weight: 700;
+    }
+
+    & .navbar-collapse {
+        padding-left: 50px;
+    }
+}
+
+/* Cards */
+.cardsCol {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 14rem;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: top 300ms ease-in-out;
+    top: 0;
+
+    & .eventOverlay {
+        height: 0;
+        bottom: 17%;
+        transition: height 0.5s ease-in-out;
+        visibility: hidden;
+    }
+
+    &:hover {
+        top: -11px;
+        opacity: 0.8;
+
+        & .comicTitle {
+            color: darkred;
+        }
+
+        & .eventOverlay {
+            visibility: visible;
+            height: 83.7%;
+        }
+    }
+
+    & .comicTitle,
+    .eventName {
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+
+    & .comicSubTitle {
+        font-size: 0.80rem;
+        font-weight: 400;
+        position: relative;
+        top: -7.5px;
+    }
+
+    & .card-body {
+        padding: 10px 3px;
+    }
+}
