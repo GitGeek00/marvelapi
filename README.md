@@ -4,7 +4,7 @@ Comic Craze is a compact and focused project created for the Code the Dream ADVA
 ## Instalation
 Download 3 folders: img, js, style and HTML single file: index.html to the root server directory
 The website has been hosted on free host 000webhostapp.com and work well, the link is: 
-[Contribution guidelines for this project]([docs/CONTRIBUTING.md](https://comiccraze.000webhostapp.com/))
+[Contribution guidelines for this project](https://comiccraze.000webhostapp.com/))
 
 ## Project Design
 The design is straightforward and unconventional, intended solely to serve the project's purpose.
