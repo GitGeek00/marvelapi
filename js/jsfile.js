@@ -116,7 +116,7 @@ function modal() {
 
 //Run search function (searchCraze) when user finish typing then press enter key or click on search button
 document.getElementById('searchInput').onchange = function () {
-  searchCraze(0, 0, document.getElementById('searchInput').value)
+  searchCraze(document.getElementById('searchInput').value)
 }
 
 //When user change search box value clear search results and return back search button to its original state
@@ -128,12 +128,12 @@ document.getElementById('searchInput').oninput = function () {
 }
 
 //Fetch API function
-function searchCraze(cnt, ofst, searchText) {
+function searchCraze(searchText) {
   //Clear search results area
   document.getElementById('addDataParent').style.overflowY = 'unset'
   document.getElementById('addDataParent').style.maxHeight = 'unset'
   document.getElementById('searchInput').disabled = true;
-  const apiUrl = `https://gateway.marvel.com:443/v1/public/comics?format=comic&formatType=comic&ts=1&apikey=${publicKey}&hash=${hash}&titleStartsWith=${searchText}&orderBy=-onsaleDate&limit=99&offset=${ofst}`;
+  const apiUrl = `https://gateway.marvel.com:443/v1/public/comics?format=comic&formatType=comic&ts=1&apikey=${publicKey}&hash=${hash}&titleStartsWith=${searchText}&orderBy=-onsaleDate&limit=99`;
   fetch(apiUrl)
     .then(response => response.json())
     .then((data) => {
@@ -163,9 +163,13 @@ tbody.addEventListener('click', function (e) {
   document.getElementById('searchInput').value = cell.innerText
 });
 
-//Open detail link when user click on open button
+// Open detail link when user click on open button if user select result or implement the search
 document.getElementById('searchBtn').onclick = () => {
-  window.open(cell.children[0].innerHTML);
+  if (document.getElementById('searchBtn') == 'search') {
+    searchCraze(document.getElementById('searchInput').value)
+  } else {
+    window.open(cell.children[0].innerHTML);
+  }
 }
 
 //when search modal shown set search box focus
