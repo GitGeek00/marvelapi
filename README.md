@@ -8,7 +8,7 @@ An online copy of website hosted on free host 000webhostapp.com and work well, t
 https://comiccraze.000webhostapp.com
 
 ## Project Design
-The design is straightforward and unconventional, intended solely to serve the project's purpose.
+The design is simple and unconventional, specifically tailored to fulfill the project's objectives. It utilizes Bootstrap's flexbox for responsiveness but doesn't fully prioritize responsive functionality.
 
 ## Project Functionality
 The project use 3 models of marvel API
