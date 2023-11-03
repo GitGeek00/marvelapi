@@ -2,12 +2,13 @@
 Comic Craze is a compact and focused project created for the Code the Dream ADVANCED PRE-WORK ASSIGNMENT
 
 ## Installation
-Download 3 folders: img, js, style and HTML single file: index.html to the root server directory
-The website has been hosted on free host 000webhostapp.com and work well, the link is: 
+Download three folders: img, js, style, and the HTML file named index.html, or ensure that the directory structure matches the one in the repository before placing them in the root server directory.
+
+An online copy of website hosted on free host 000webhostapp.com and work well, the link is: 
 https://comiccraze.000webhostapp.com
 
 ## Project Design
-The design is straightforward and unconventional, intended solely to serve the project's purpose.
+The design is simple and unconventional, specifically tailored to fulfill the project's objectives. It utilizes Bootstrap's flexbox for responsiveness but doesn't fully prioritize responsive functionality.
 
 ## Project Functionality
 The project use 3 models of marvel API
