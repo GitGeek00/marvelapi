@@ -33,4 +33,5 @@ The Events page functions similarly to the comics page, with results not filtere
 
 ## Search
 When the user clicks the 'Search' menu link, a modal will appear where they can input search criteria. The user can then either press the Enter key on the keyboard or click the search button. In both cases, results will appear below the search input as a list, allowing the user to select their desired comic. After that, the search button will transform into an 'Open' button with a new function, which is to open the comic detail page on Marvel.com.
+Note that Marvel API allow only flitter result by beginning with, not allowed to search by substring.
 
